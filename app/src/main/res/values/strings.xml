@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Adzkhr</string>
+    <string name="dalil"> \"dan bertasbihlah kepada-Nya \ndi waktu pagi dan petang.\"\n[QS. Al-Ahzab: 41-42] </string>
+    <string name="dalil_ar">وَسَبِّحُوهُ بُكْرَةً وَأَصِيلًا</string>
+    <string name="pagi">Dianjurkan setelah shalat Subuh \nhingga terbitnya Fajar</string>
+    <string name="petang">Dianjurkan setelah terbenamnya Matahari \nhingga batas akhir shalat Isya</string>
+    <string name="tv_splash">Mari Awali Hari Dengan \nBerdzikir</string>
+    <string name="bacaan_dzikir_petang">Bacaan Dzikir Petang</string>
+    <string name="bacaan_dzikir_pagi">Bacaan Dzikir Pagi</string>
+    <string name="amoled">Amoled TI UNIDA Gontor\nDeveloper Studen Club</string>
+</resources>

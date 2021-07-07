@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fitsSystemWindows="true"
+    tools:context=".DzikirPagi">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:id="@+id/frameHeader"
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_gravity="end"
+                android:elevation="5dp"
+                android:padding="4dp"
+                android:src="@drawable/logo_morning"
+                android:background="@drawable/bg_header"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:backgroundTint="@color/brown"
+                android:background="@drawable/bg_row_all"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:text="@string/bacaan_dzikir_pagi"
+                    android:fontFamily="@font/poppinsbold"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/poppinsregular"
+                    android:text="@string/pagi"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:background="@android:color/transparent"
+                android:elevation="0dp"
+                app:elevation="0dp">
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/morning_toolbar"
+                    android:layout_width="?actionBarSize"
+                    android:layout_height="?actionBarSize"
+                    app:navigationIcon="@drawable/ic_arrow_white"/>
+            </com.google.android.material.appbar.AppBarLayout>
+
+        </FrameLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/frameHeader"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_morning"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:listitem="@layout/rv_dzikir"/>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
